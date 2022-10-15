@@ -1,0 +1,62 @@
+.projects {
+    user-select: none;
+}
+
+.proj_container {
+    gap: 2.5rem;
+}
+
+.proj_data {
+    text-align: center;
+}
+
+.proj_title {
+    font-weight: bold;
+}
+
+.proj_img {
+    width: 500px;
+    justify-self: center;
+}
+
+.proj_description {
+    line-height: 1.7rem;
+    padding: 1.3rem 0rem 1.3rem 0rem;
+}
+
+.proj_button {
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    border-radius: .5em;
+    border: 2px solid rgb(129, 135, 139, .7);
+    padding: .8rem 2.1rem;
+    transition: all .6s;
+    background-color: var(--first-color);
+    box-shadow: .3em .3em .2em .1em rgba(129, 135, 139, .5);
+}
+
+.proj_button:hover {
+    scale: 1.1;
+    transition: all .6s;
+}
+
+.proj_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 1rem;
+    line-height: 1rem;
+}
+
+.box_title {
+    font-weight: bold;
+    color: var(--second-color);
+    padding-bottom: .5rem;
+}
+
+.box_subtitle {
+    font-size: var( --small-font-size);
+    color: var(--second-color);
+}

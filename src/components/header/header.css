@@ -1,0 +1,62 @@
+.header {
+    user-select: none;
+}
+
+.h_container {
+    row-gap: 3rem;
+}
+
+.h_main_title {
+    font: italic bold var(--big-size) 'Tai Heritage Pro', serif;
+    padding: 2rem 0rem 3rem 0rem;
+}
+
+.h_title {
+    font-size: var(--title-size);
+    font-weight: bold;
+    margin-bottom: .75rem;
+}
+
+.h_description {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.button1 {
+    color: var(--first-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    border-radius: .5em;
+    border: 2px solid rgb(129, 135, 139, .7);
+    margin-right: 1rem;
+    padding: .8rem 2.1rem;
+    background-color: var(--second-color);
+    box-shadow: .3em .3em .2em .1em rgba(129, 135, 139, .5);
+    transition: all .6s;
+}
+
+.button1:hover {
+    scale: 1.2;
+    transition: all .6s;
+}
+
+.button2 {
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    border-radius: .5em;
+    border: 2px solid rgb(129, 135, 139, .7);
+    padding: .8rem 2.1rem;
+    background-color: var(--first-color);
+    box-shadow: .3em .3em .2em .1em rgba(129, 135, 139, .5);
+    transition: all .6s;
+}
+
+.button2:hover {
+    scale: 1.2;
+    transition: all .6s;
+}

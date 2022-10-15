@@ -1,0 +1,20 @@
+.branch {
+    user-select: none;
+}
+
+.brach_container {
+    gap: 3rem 2rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.b_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b_l {
+    font-size: 6rem;
+    height: 50px;
+}

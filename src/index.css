@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap');
+
+:root {
+    /*== Header height ==*/
+    --header-height: 3rem;
+
+    /*== Colors ==*/
+    --first-color: white;
+    --second-color: black;
+
+    /*== Font & Font size ==*/
+    --body-font: 'Tai Heritage Pro', serif;
+
+    --big-size: 2.5rem; /*40*/
+
+    --title-size: 2.25rem; /*36*/
+    --subtitle-size: 1.25rem; /*20*/
+    --sub-size: 1rem; /*16*/
+
+    --h1-font-size: 1.5rem; /*24*/
+    --h2-font-size: 1.25rem; /*20*/
+    --h3-font-size: 1.125rem; /*18*/
+    
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem; 
+    --smaller-font-size: .75rem; 
+
+    /*== z index ==*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .app-container {
+    background-color: var(--first-color);
+    transition: .8s;
+  }
+  
+  body {
+    margin: 0 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--first-color);
+    color: var(--second-color);
+  }
+  
+  ul, a {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  a {
+    transition: all 400ms ease;
+  }
+  
+  h2, h3, h4, h5 {
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .section {
+    padding: 4.5rem 0 1rem;
+  }
+
+  .svg > img {
+    width: 300px;
+    justify-self: center;
+  }
+
+  .container {
+    max-width: 968px;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .hoverme {
+    scale: 1.1;
+    transition: .6s;
+  }
+
+  @media screen and (max-width: 360px) {
+    .section {
+      padding: 3.5rem 0 1rem;
+    }
+  }
+
+  @media screen and (max-width: 414px) {
+    .h_title {
+      font-size: 2rem;
+    }
+
+    .test_box {
+      margin-left: .4rem;
+    }
+
+    .subs_description {
+      font-size: var(--smaller-font-size);
+    }
+
+    .subs_input {
+      width: 100%;
+    }
+
+    .subs_form {
+      padding: 0; 
+    }
+
+    .footer_container {
+      justify-items: start;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 1rem 0 1rem;
+      column-gap: 5rem;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    .img {
+      width: 100%;
+    }
+
+    .h_container, .footer_container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services_container, .proj_container {
+      grid-template-columns: repeat(2, 2fr);
+    }
+
+    .proj_img {
+      width: 100%;
+      order: 1;
+    }
+
+    .h_img {
+      order: 1;
+    }
+
+    .h_container, .services_container, .proj_container {
+      align-items: center;
+    }
+
+    .services_img {
+      width: 100%;
+      order: -1;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+    }
+
+    .section {
+      padding: 6rem 0 2rem;
+    }
+
+    .navbar {
+      height: calc(3rem + 1rem);
+    }
+
+    .menu {
+      flex-direction: row;
+      column-gap: 2.5rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .b_l {
+      font-size: 15rem;
+      height: 60px;
+    }
+  }
+
+  @media screen and (min-width:280px) and (max-width:768px) {
+    .subs_description {
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .subscribe_container {
+      padding: 3.5rem 0;
+    }
+
+    .subs_input {
+      padding: 0 .5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .h_b {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button1 , .button2{
+      padding: 1rem 0 1rem;
+    }
+
+    .about_card {
+      grid-template-columns: repeat(1, max-content);
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 968px) {
+    .h_img {
+      width: 470px;
+    }
+
+    .services_img {
+      width: 470px;
+    }
+
+    .services_container, .proj_container {
+      column-gap: 6rem;
+    }
+
+    .footer_container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .h_img {
+      width: 540px;
+    }
+
+    .h_description {
+      padding-right: 5rem;
+    }
+  }

@@ -1,0 +1,44 @@
+.services {
+    user-select: none;
+}
+
+.services_container {
+    gap: 2.5rem;
+}
+
+.services_data {
+    text-align: center;
+}
+
+.services_title {
+    font-weight: bold;
+}
+
+.services_img {
+    width: 500px;
+    justify-self: center;
+}
+
+.services_description {
+    line-height: 1.7rem;
+    padding: 1.3rem 0rem 1.3rem 0rem;
+}
+
+.services_button {
+    color: var(--first-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    border-radius: .5em;
+    border: 2px solid rgb(129, 135, 139, .7);
+    padding: .8rem 2.1rem;
+    transition: all .6s;
+    background-color: var(--second-color);
+    box-shadow: .3em .3em .2em .1em rgba(129, 135, 139, .5);
+}
+
+.services_button:hover {
+    scale: 1.1;
+    transition: all .6s;
+}

@@ -1,0 +1,65 @@
+.testimonial {
+    user-select: none;
+}
+
+.containerss {
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+}
+
+.tec {
+    width: 15rem;
+}
+
+.TT_title {
+    font-weight: bold;
+    font-size: var(--title-size);
+}
+
+.TT_subtitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: var(--sub-size);
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.test {
+    line-height: 1rem;
+}
+
+.testimonial_container {
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+
+.test_box {
+    line-height: 1rem;
+    padding: 1.25rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.t_img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.t_name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.t_des {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.mySwiper {
+    width: 100%;
+}
+
+.swiper-pagination {
+    visibility: hidden;
+}

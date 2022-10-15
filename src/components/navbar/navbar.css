@@ -1,0 +1,134 @@
+/*
+.button {
+    color: var(--first-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .05rem;
+    border: 1px solid red;
+    padding: .8rem 2.1rem;
+    background-color: var(--second-color);
+}
+
+.button p {
+    font-size: 16px;
+}
+
+.border {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.border::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + .5em);
+    height: 50%;
+    left: -.25em;
+    top: -.3em;
+    border: 2px solid var(--second-color);
+    border-bottom: 0px;
+}
+
+.border::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + .5em);
+    height: 50%;
+    left: -.25em;
+    bottom: -.3em;
+    border: 2px solid var(--second-color);
+    border-top: 0px;
+    z-index: 0;
+}
+*/
+.navbar {
+    width: 100%;
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0; left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+}
+
+.navbar-container {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+nav a, nav h3 {
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav h3 {
+    user-select: none;
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        position: fixed;
+        background-color: var(--first-color);
+        box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+        padding: 2.5rem 0;
+        width: 90%;
+        top: -100%; left: 0; right: 0;
+        margin: 0 auto;
+        transition: .4s;
+        border-radius: 2rem;
+        z-index: var(--z-fixed);
+    }
+
+    .navbar .active {
+        top: calc(4rem + 1rem);
+    }
+
+    .navbar .menu li a {
+        font-size: 1.5rem;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+@media screen and (min-width: 1300px) {
+    .navbar-container {
+        margin: 0rem 5rem 0rem 5rem;
+    }
+}
+
+.button {
+    color: var(--second-color);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .05rem;
+    border-radius: .5em;
+    border: 2px solid rgb(129, 135, 139, .7);
+    padding: .8rem 2.1rem;
+    background-color: var(--first-color);
+    box-shadow: .3em .3em .2em .1em rgba(129, 135, 139, .5);
+    transition: all .6s;
+}
+
+.button:hover {
+    transition: all .6s;
+    scale: 1.1;
+}
