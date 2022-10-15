@@ -1,4 +1,4 @@
-<h1 align="center"> Intertior Design </h1>
+<h1 align="center"> Interior Design </h1>
 
 ## :black_nib: About :black_nib:
 This is a Front-End Web Development Project, I designed a home interior design website that gives 
